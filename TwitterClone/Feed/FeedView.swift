@@ -19,7 +19,7 @@ struct FeedView: View {
             }
             
             Button(action: {}) {
-                Image(systemName: "plus")
+                Image("tweet")
                     .resizable()
                     .renderingMode(.template)
                     .frame(width: 32, height: 32)

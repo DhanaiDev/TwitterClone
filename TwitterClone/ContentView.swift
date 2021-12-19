@@ -16,12 +16,12 @@ struct ContentView: View {
                     Text("Home")
                 }
                 
-                Text("Search View").tabItem{
+                SearchView().tabItem{
                     Image(systemName: "magnifyingglass")
                     Text("Search")
                 }
                 
-                Text("Messages").tabItem {
+                ConversationView().tabItem {
                     Image(systemName: "envelope")
                     Text("Messages")
                 }

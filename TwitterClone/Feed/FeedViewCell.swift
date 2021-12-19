@@ -9,11 +9,12 @@ import SwiftUI
 
 struct FeedViewCell: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 Image("batman")
                     .resizable()
                     .frame(width: 56, height: 56, alignment: .center)
+                    .clipped()
                     .scaledToFill()
                     .clipShape(Circle())
                     .padding(.leading)
@@ -64,8 +65,7 @@ struct FeedViewCell: View {
                 .padding(.horizontal)
             Divider()
         }
-        .padding(.top)
-        .padding(.horizontal)
+        .padding(.leading, -8)
     }
 }
 
