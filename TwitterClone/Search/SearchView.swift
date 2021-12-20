@@ -17,7 +17,12 @@ struct SearchView: View {
             
             LazyVStack {
                 ForEach(0..<40) { index in
-                    UserCell()
+                    NavigationLink {
+                        UserProfileView()
+                    } label: {
+                        UserCell()
+                    }
+
                 }
             }
         }
