@@ -14,9 +14,9 @@ struct ChatView: View {
     var body: some View {
         VStack{
             ScrollView{
-                VStack{
-                    ForEach(0..<10) { _ in
-                        Text("Test")
+                VStack(alignment: .leading, spacing: 12){
+                    ForEach(MOCK_MESSAGES) { message in
+                        MessageView(message: message)
                     }
                 }
             }
@@ -33,3 +33,5 @@ struct ChatView_Previews: PreviewProvider {
         ChatView()
     }
 }
+
+

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ConversationCell: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 Image("batman")
                     .resizable()
@@ -21,7 +21,7 @@ struct ConversationCell: View {
                 VStack(alignment: .leading){
                     Text("Batman").font(.system(size: 14, weight: .semibold))
                     
-                    Text("This is longer message to text Probably at least one. ")
+                    Text("This is longer message to text Probably at the least one. ")
                         .font(.system(size: 14))
                         .multilineTextAlignment(.leading)
                         .lineLimit(2)

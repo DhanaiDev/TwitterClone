@@ -24,12 +24,11 @@ struct UserCell: View {
                     
                     Text("@bruce_wayne")
                         .font(.system(size: 14))
-                }
+                }.foregroundColor(.black)
                 Spacer()
                 
             }
             .padding(.horizontal)
-            .padding(.vertical, 8)
             
             Divider()
         }
