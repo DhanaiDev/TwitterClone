@@ -15,8 +15,8 @@ struct ProfileHeaderView: View {
                 .scaledToFill()
                 .frame(width: 100, height: 100, alignment: .center)
                 .clipShape(Circle())
-            .clipped()
-            .shadow(color: .black, radius: 10, x: 1, y: 0)
+                .clipped()
+                .shadow(color: .black, radius: 10, x: 1, y: 0)
             
             VStack(spacing: 8) {
                 Text("Bruce Wayne")
