@@ -8,27 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+//    var body: some View {
+//        NavigationView {
+//            TabView {
+//                FeedView().tabItem{
+//                    Image(systemName: "house")
+//                    Text("Home")
+//                }
+//                
+//                SearchView().tabItem{
+//                    Image(systemName: "magnifyingglass")
+//                    Text("Search")
+//                }
+//                
+//                ConversationView().tabItem {
+//                    Image(systemName: "envelope")
+//                    Text("Messages")
+//                }
+//            }
+//            
+//            .navigationTitle("Home")
+//            .navigationBarTitleDisplayMode(.inline)
+//        }
+//    }
+    
     var body: some View {
         NavigationView {
-            TabView {
-                FeedView().tabItem{
-                    Image(systemName: "house")
-                    Text("Home")
-                }
-                
-                SearchView().tabItem{
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
-                }
-                
-                ConversationView().tabItem {
-                    Image(systemName: "envelope")
-                    Text("Messages")
-                }
-            }
-            
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
+            LoginView()
         }
     }
 }
